@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GoogleSearchEngineSimulator</servlet-name>
+		<servlet-class>com.gses.GoogleSearchEngineSimulatorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GoogleSearchEngineSimulator</servlet-name>
+		<url-pattern>/googlesearchenginesimulator</url-pattern>
+	</servlet-mapping>
+ 	
+	<filter> 
+      <filter-name>timer</filter-name> 
+      <filter-class>com.gses.MyFilter</filter-class> 
+   </filter> 
+   <filter-mapping> 
+      <filter-name>timer</filter-name> 
+      <url-pattern>jsp/sleepy.jsp</url-pattern> 
+   </filter-mapping> 
+   
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+#inputbox {
+    position:absolute;
+    top:320px;
+    left:380px;
+    height:35px;
+    width:500px;
+    size:200px;
+    font-size:14pt;
+}
+
+#inputbox:hover {
+    border: 1px solid grey;
+}
+
+#inputbox:focus {
+    outline:none;
+    border: 1px solid #3399ff;
+}
+
+img {
+    position:absolute;
+    top:200px;
+    left:450px;
+}
+
+#btngroup {
+    position:absolute;
+    top:370px;
+    left:500px;
+}
+
+button {
+    background-color: #e6e6e6; /* Green */
+    border: none;
+    color: #7f7f7f;
+    font-weight:bold;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+button:hover {
+    background:#e6e6e6;
+    border:1px solid #7f7f7f;
+    color:black;
+    font-weight:bold;
+}
